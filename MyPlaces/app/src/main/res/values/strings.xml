@@ -20,4 +20,10 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_my_places_list">MyPlacesList</string>
+    <string name="title_activity_edit_my_place">EditMyPlaceActivity</string>
+    <string name="editmyplace_name_label">Name:</string>
+    <string name="editmyplace_desc_label">Description:</string>
+    <string name="editmyplace_cancel_label">Cancel</string>
+    <string name="title_activity_view_my_places">ViewMyPlacesActivity</string>
+    <string name="viewmyplace_finished_button">OK</string>
 </resources>
