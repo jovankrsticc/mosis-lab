@@ -24,6 +24,13 @@
     <string name="editmyplace_name_label">Name:</string>
     <string name="editmyplace_desc_label">Description:</string>
     <string name="editmyplace_cancel_label">Cancel</string>
+    <string name="editmyplace_lat_label">Latitude:</string>
+    <string name="editmyplace_lon_label">Longitude:</string>
+    <string name="editmyplace_location_label">Get Location</string>
     <string name="title_activity_view_my_places">ViewMyPlacesActivity</string>
     <string name="viewmyplace_finished_button">OK</string>
+    <string name="title_activity_my_places_maps">MyPlacesMapsActivity</string>
+
+
+
 </resources>

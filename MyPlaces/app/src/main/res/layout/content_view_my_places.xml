@@ -23,6 +23,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude:"/>
+    <TextView
+        android:id="@+id/viewmyplace_lon_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"/>
+    <TextView
+        android:id="@+id/viewmyplace_lat_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
             android:id="@+id/viewmyplace_finished_button"
             android:layout_width="match_parent"
