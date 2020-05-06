@@ -275,8 +275,14 @@ public class MyPlacesMapsActivity extends AppCompatActivity {
     {
         if(state==SELECT_COORDINATES && !selCoorsEnabled)
         {
-            menu.add(0,1,1,"Select Coordinates");
-            menu.add(0,2,2,"Cancel");
+            MenuItem selCoords= menu.add(0,1,1,"Select Coordinates");
+            selCoords.setIcon(R.drawable.location_on_icon_background);
+            selCoords.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
+            MenuItem cancel=menu.add(0,2,2,"Cancel");
+            cancel.setIcon(R.drawable.cancel_icon_background);
+            cancel.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
             return super.onCreateOptionsMenu(menu);
         }
         else
@@ -297,6 +303,8 @@ public class MyPlacesMapsActivity extends AppCompatActivity {
             {
                 selCoorsEnabled=true;
                 Toast.makeText(this,"Select coordinates",Toast.LENGTH_SHORT).show();
+                item.setEnabled(false);
+                item.setIcon(getResources().getDrawable(R.drawable.location_on_icon_background));
             }
             else if(id==2)
             {
