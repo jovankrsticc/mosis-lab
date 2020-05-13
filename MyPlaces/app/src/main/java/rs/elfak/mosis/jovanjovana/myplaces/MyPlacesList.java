@@ -58,7 +58,7 @@ public class MyPlacesList extends AppCompatActivity {
             {
               AdapterView.AdapterContextMenuInfo info= (AdapterView.AdapterContextMenuInfo)contextMenuInfo;
               MyPlace place=MyPlacesData.getInstance().getPlace(info.position);
-              contextMenu.setHeaderTitle(place.getName());
+              contextMenu.setHeaderTitle(place.name);
               contextMenu.add(0,1,1,"View place");
               contextMenu.add(0,2,2,"Edit place");
               contextMenu.add(0,3,3,"Delete place");
@@ -108,8 +108,8 @@ public class MyPlacesList extends AppCompatActivity {
             i=new Intent(this,MyPlacesMapsActivity.class);
             i.putExtra("state",MyPlacesMapsActivity.CENTER_PLACE_ON_MAP);
             MyPlace place=MyPlacesData.getInstance().getPlace(info.position);
-            i.putExtra("lat",place.getLatitude());
-            i.putExtra("lon",place.getLongitude());
+            i.putExtra("lat",place.latitude);
+            i.putExtra("lon",place.longitude);
             startActivityForResult(i,2);
         }
         return super.onContextItemSelected(item);

@@ -1,12 +1,17 @@
 package rs.elfak.mosis.jovanjovana.myplaces;
 
-public class MyPlace {
-    String name;
-    String description;
-    String longitude;
-    String latitude;
-    int ID;
+import com.google.firebase.database.Exclude;
+import com.google.firebase.database.IgnoreExtraProperties;
 
+@IgnoreExtraProperties
+public class MyPlace {
+   public String name;
+   public String description;
+   public String longitude;
+   public String latitude;
+   @Exclude
+   public String key;
+   public MyPlace() {}
     public MyPlace(String nme, String desc)
     {
         this.name=nme;
@@ -16,47 +21,7 @@ public class MyPlace {
     {
         this(nme,"");
     }
-    public String getName()
-    {
-        return name;
-    }
-    public String getDescription()
-    {
-        return description;
-    }
-    public void setName(String nme)
-    {
-        this.name=nme;
-    }
-    public void setDesc(String desc)
-    {
-        this.description=desc;
-    }
 
-    public String getLatitude() {
-        return latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
-    }
-
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID)
-    {
-        this.ID=ID;
-    }
 
     @Override
     public String toString()

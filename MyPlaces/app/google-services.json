@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "345863020631",
+    "firebase_url": "https://my-places-af29d.firebaseio.com",
+    "project_id": "my-places-af29d",
+    "storage_bucket": "my-places-af29d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345863020631:android:0bb3b7f9b721b58a65c312",
+        "android_client_info": {
+          "package_name": "rs.elfak.mosis.jovanjovana.myplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345863020631-p8h2185g03u5d5n16prpgjhmlr8pl4n9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rs.elfak.mosis.jovanjovana.myplaces",
+            "certificate_hash": "506ee1ea48edb92af4bdcc5fb342e7ed60dc2abe"
+          }
+        },
+        {
+          "client_id": "345863020631-g2nc1phkgl1c567erhn4hr9labiisk7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhtdRjwcjX_MBkMxEm-hZkOzuo4odR7j0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345863020631-g2nc1phkgl1c567erhn4hr9labiisk7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
